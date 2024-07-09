@@ -50,7 +50,7 @@ class _AppointmentsState extends State<Appointments> {
                 color: Colors.black,
                 icon:const Icon(Icons.arrow_back),
                 onPressed: () {
-                  Navigator.of(context).pushReplacementNamed('/Scan_Type');
+                    Navigator.pop(context);
                 }),
             title:const Center(
               child: Text(
