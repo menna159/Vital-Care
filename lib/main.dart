@@ -10,6 +10,7 @@ import 'package:final_dart/screens/authentication/sign_up_doc.dart';
 import 'package:final_dart/screens/authentication/signin_patient.dart';
 import 'package:final_dart/screens/bot.dart';
 import 'package:final_dart/screens/change_password.dart';
+import 'package:final_dart/screens/logo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'cubits/authh_cubit/auth_cubit.dart';
@@ -66,7 +67,7 @@ class VitalCare extends StatelessWidget {
             '/bot': (context) =>const BotPage(),
             '/allPatient': (context) =>const AllPatients(),
             '/all_docs': (context) => AllDocs(),
-
+            '/logo': (context) =>const Logo(),
             '/checkemail': (context) => CheckYourEmail(),
             '/reset_pass': (context) => ResetPassword(),
             '/reset_success': (context) => ResetSuccess(),
@@ -75,7 +76,7 @@ class VitalCare extends StatelessWidget {
             '/AbnormalSymptoms': (context) =>const AbnormalSymptoms(),
             '/all_appointment': (context) =>const Appointments(),
           },
-          initialRoute: '/main',
+          initialRoute: '/logo',
         );
         
       },
